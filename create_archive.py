@@ -21,6 +21,7 @@ def create_archive(path_with_files, path_save_archive):
     contains_zip = ZipFile(path_save_archive).namelist()
     assert file_directory == contains_zip, 'Содержимое архива не совпадает с исходными файлами'
 
+# test
 
 def precondition_directory(path_save_archive):
     path_file = os.path.join(path_save_archive, '*.*')
